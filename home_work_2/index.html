@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Register</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Register here</legend>
+                <input type="text" id="fName" placeholder="First name" />
+                <input type="text" id="sName" placeholder="Second name" />
+                <input type="email" id="email" placeholder="john@gmail.com" pattern=".+@gmail\.com" size="30" required />
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+372 5443242" required />
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <div>
+                    <input type="checkbox" id="terms" />
+                    <label for="terms">Terms</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="news" />
+                    <label for="news">Newsletter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="subs" />
+                    <label for="subs">Subscribe</label>
+                </div>
+                <input type="submit" value="Register" />
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h4>© КОПИРАЙТ, 2000-2022</h4>
+    </footer>
+</body>
+
+</html>
